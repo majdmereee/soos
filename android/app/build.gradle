@@ -1,0 +1,14 @@
+// داخل android/app/build.gradle
+// ابحث عن كتلة defaultConfig وتأكد منها
+
+android {
+    // ...
+    defaultConfig {
+        applicationId "com.example.sos"
+        minSdkVersion 21   // <--- يجب أن يكون 21 على الأقل لعمل الخدمات والشاشة المنبثقة بكفاءة
+        targetSdkVersion flutter.targetSdkVersion
+        versionCode flutterVersionCode.toInteger()
+        versionName flutterVersionName
+    }
+    // ...
+}
